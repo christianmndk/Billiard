@@ -1,0 +1,74 @@
+{
+    "name": "InputSystem",
+    "maps": [
+        {
+            "name": "Queue",
+            "id": "be81c8ed-d9fc-4ee8-94b3-eb903d9e6775",
+            "actions": [
+                {
+                    "name": "opladeQueue",
+                    "type": "Button",
+                    "id": "47259433-bc85-4277-bd48-8e0df670839e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Hold(pressPoint=0.5)"
+                },
+                {
+                    "name": "turnQueue",
+                    "type": "Button",
+                    "id": "c8fe6278-6d96-49b0-86ff-25ba0f0721a1",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Hold"
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "881d958c-a325-4249-b141-7bdf1fa29bea",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "opladeQueue",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "turn",
+                    "id": "b387721b-cfc1-4ac4-8402-daf35f935729",
+                    "path": "1DAxis(minValue=-2,maxValue=2,whichSideWins=1)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "turnQueue",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "ff560741-a1ff-474a-b765-5275c5fdfc2c",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "turnQueue",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "793578ac-89b0-47a7-863a-4d8183b83286",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "turnQueue",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
